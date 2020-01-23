@@ -111,6 +111,7 @@ def movies_with_directors_set(source)
     movies << movies_with_director_key(data[:name], data[:movies])
     count += 1
   end
+  
   movies
 end
 
