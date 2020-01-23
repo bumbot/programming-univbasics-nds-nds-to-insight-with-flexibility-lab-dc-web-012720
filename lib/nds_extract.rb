@@ -107,11 +107,14 @@ def movies_with_directors_set(source)
   
   while count < source.length do
     data = source[count]
-    index = 0
-    while index < data[:movies].length do
-      movies << [{:director_name => data[:name], :title => data[:movies][index]}]
-      index += 1
-    end
+    
+    movies << movies
+    #dir_info_hash = source[i]
+    #director_name = dir_info_hash[:name]
+    #directors_movies = dir_info_hash[:movies]
+    #a_o_a_movies_by_dir << movies_with_director_key(director_name, directors_movies)
+    
+    
     count += 1
   end
   
